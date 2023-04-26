@@ -1,0 +1,83 @@
+---
+// Welcome to Astro! Everything between these triple-dash code fences
+// is your "component front matter". It never runs in the browser.
+console.log("This runs in your terminal, not the browser!");
+import ReactComponent from "../components/ReactComponent";
+import Worm from "../components/Worm";
+import SvelteComponent from "../components/SvelteComponent/SvelteComponent.svelte";
+const x: string = "hello, this is a string variable";
+---
+
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+    <ReactComponent client:idle />
+    <p>{x}</p>
+    <Worm />
+    <p>
+      The above logo was generated with the `aunty generate component` command.
+    </p>
+    <SvelteComponent client:idle>This is a Svelte component</SvelteComponent>
+    <p>This is some paragraph text.</p>
+    <p>
+      Concept of the number one great turbulent clouds extraordinary claims
+      require extraordinary evidence birth tendrils of gossamer clouds the sky
+      calls to us. Cosmic ocean take root and flourish from which we spring
+      hydrogen atoms emerged into consciousness a still more glorious dawn
+      awaits. Dream of the mind's eye stirred by starlight ship of the
+      imagination kindling the energy hidden in matter not a sunrise but a
+      galaxyrise a mote of dust suspended in a sunbeam?
+    </p>
+    <p>
+      Bits of moving fluff quasar Drake Equation consciousness prime number
+      brain is the seed of intelligence. A billion trillion made in the
+      interiors of collapsing stars great turbulent clouds descended from
+      astronomers the sky calls to us are creatures of the cosmos. Sea of
+      Tranquility invent the universe Sea of Tranquility Orion's sword from
+      which we spring invent the universe. The sky calls to us Jean-François
+      Champollion from which we spring dream of the mind's eye from which we
+      spring the sky calls to us.
+    </p>
+    <p>
+      Rings of Uranus gathered by gravity the sky calls to us not a sunrise but
+      a galaxyrise worldlets muse about. Courage of our questions citizens of
+      distant epochs from which we spring extraordinary claims require
+      extraordinary evidence extraordinary claims require extraordinary evidence
+      a still more glorious dawn awaits. The ash of stellar alchemy emerged into
+      consciousness a still more glorious dawn awaits the ash of stellar alchemy
+      dream of the mind's eye at the edge of forever.
+    </p>
+    <p>
+      Rig Veda courage of our questions Euclid not a sunrise but a galaxyrise
+      kindling the energy hidden in matter Orion's sword. From which we spring
+      extraplanetary bits of moving fluff Cambrian explosion invent the universe
+      citizens of distant epochs. The carbon in our apple pies gathered by
+      gravity a mote of dust suspended in a sunbeam stirred by starlight are
+      creatures of the cosmos permanence of the stars.
+    </p>
+    <p>
+      Orion's sword dream of the mind's eye a billion trillion permanence of the
+      stars stirred by starlight ship of the imagination? Star stuff harvesting
+      star light intelligent beings two ghostly white figures in coveralls and
+      helmets are softly dancing at the edge of forever birth how far away. A
+      very small stage in a vast cosmic arena with pretty stories for which
+      there's little good evidence muse about network of wormholes
+      circumnavigated a mote of dust suspended in a sunbeam and billions upon
+      billions upon billions upon billions upon billions upon billions upon
+      billions.
+    </p>
+    <SvelteComponent client:visible>
+      This Svelte component should hydrate when visible on the page.
+    </SvelteComponent>
+  </body>
+</html>
+
+<style>
+  h1 {
+    color: orange;
+  }
+
+  p {
+    color: #ff00ff;
+  }
+</style>

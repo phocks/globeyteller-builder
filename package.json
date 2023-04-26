@@ -1,0 +1,38 @@
+{
+  "name": "aunty-template-astro",
+  "version": "0.1.0",
+  "description": "A template for an Astro project using Aunty to deploy",
+  "license": "MIT",
+  "private": true,
+  "contributors": [
+    "Joshua Byrd <phocks@gmail.com>"
+  ],
+  "aunty": {
+    "type": "astro"
+  },
+  "scripts": {
+    "start": "aunty build && astro dev",
+    "dev": "aunty build && astro dev",
+    "build": "aunty build && astro build",
+    "deploy": "NODE_ENV=production aunty deploy"
+  },
+  "devDependencies": {
+    "@abcnews/aunty": "^14.0.0",
+    "@testing-library/svelte": "^3.2.2",
+    "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0",
+    "react-test-renderer": "^18.2.0"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.1.1",
+    "@astrojs/svelte": "^2.1.0",
+    "@nanostores/persistent": "^0.8.0",
+    "@nanostores/react": "^0.4.1",
+    "astro": "^2.2.1",
+    "canvas-confetti": "^1.6.0",
+    "nanostores": "^0.7.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "svelte": "^3.58.0"
+  }
+}
