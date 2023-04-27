@@ -1,14 +1,21 @@
 import React, { useEffect } from "react";
 import styles from "./styles.module.scss";
 
-const ReactComponent = props => {
+// Nanostores state
+import { randomiseColor } from "@src/stores/color";
+
+const ReactComponent = () => {
   useEffect(() => {
     const x = "Hello World!";
     console.log("React component loaded:", x);
-    console.log(props.locale);
   }, []);
 
-  return <div className={styles.root}>This is a React component</div>;
+  return (
+    <div className={styles.root}>
+      <p>This is a React component</p>
+      <button onClick={() => randomiseColor()}>Change colour</button>
+    </div>
+  );
 };
 
 export default ReactComponent;

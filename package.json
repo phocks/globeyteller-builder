@@ -1,5 +1,5 @@
 {
-  "name": "aunty-template-astro",
+  "name": "globeyteller-builder",
   "version": "0.1.0",
   "description": "A template for an Astro project using Aunty to deploy",
   "license": "MIT",
@@ -11,14 +11,15 @@
     "type": "astro"
   },
   "scripts": {
-    "start": "aunty build && astro dev",
-    "dev": "aunty build && astro dev",
+    "start": "astro dev",
+    "dev": "astro dev",
     "build": "aunty build && astro build",
     "deploy": "NODE_ENV=production aunty deploy"
   },
   "devDependencies": {
     "@abcnews/aunty": "^14.0.0",
     "@testing-library/svelte": "^3.2.2",
+    "@types/react": "^18.2.0",
     "prettier": "^2.8.7",
     "prettier-plugin-astro": "^0.8.0",
     "react-test-renderer": "^18.2.0"
