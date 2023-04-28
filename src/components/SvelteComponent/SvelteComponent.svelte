@@ -2,8 +2,6 @@
   import { onMount } from "svelte";
   import { color } from "@src/stores/color";
 
-  $: console.log("svelte ", $color)
-
   let backgroundColor = "lightblue";
 
   onMount(() => {
