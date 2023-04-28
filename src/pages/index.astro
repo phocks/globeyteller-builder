@@ -21,7 +21,10 @@ const x: string =
     The above logo was generated with the `aunty generate component` command.
   </p>
   <SvelteComponent client:visible>
-    This is a Svelte component. It should turn red 1 second after hydration.
+    <p>
+      This is a Svelte component. It should turn red 1 second after hydration.
+    </p>
+    <Worm client:visible />
   </SvelteComponent>
   <p>This is some paragraph text.</p>
   <p>
@@ -70,7 +73,8 @@ const x: string =
     billions upon billions upon billions upon billions.
   </p>
   <SvelteComponent client:visible>
-    This Svelte component should hydrate when visible on the page.
+    <p>This Svelte component should hydrate when visible on the page.</p>
+    <Worm client:visible />
   </SvelteComponent>
 </BaseLayout>
 

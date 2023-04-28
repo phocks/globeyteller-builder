@@ -1,7 +1,7 @@
 // import { atom } from "nanostores";
 import { persistentAtom } from "@nanostores/persistent";
 
-export const color = persistentAtom<string>("color", "blue");
+export const color = persistentAtom<string>("color", "Tomato");
 
 export const randomiseColor = () => {
   const getRandomColour = () => {
